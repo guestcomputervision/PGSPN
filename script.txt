@@ -1,0 +1,27 @@
+# for sparse depth height bias 20%
+python3 inference_pgspn.py \
+    --input_img_folder input_samples/rgb_images \
+    --input_sparse_folder input_samples/sparse_height_bias_20 \
+    --output_folder results_height_bias_20 \
+    --device 0 \
+    --save_colormap \
+    --colormap_inverse
+
+# for sparse depth sfm 10%
+python3 inference_pgspn.py \
+    --input_img_folder input_samples/rgb_images \
+    --input_sparse_folder input_samples/sparse_sfm_10 \
+    --output_folder results_sfm_10 \
+    --device 0 \
+    --save_colormap \
+    --colormap_inverse
+
+
+# for sparse depth uniform 50
+python3 inference_pgspn.py \
+    --input_img_folder input_samples/rgb_images \
+    --input_sparse_folder input_samples/sparse_uniform_50 \
+    --output_folder results_uniform_50 \
+    --device 0 \
+    --save_colormap \
+    --colormap_inverse
